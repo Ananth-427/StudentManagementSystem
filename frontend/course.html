@@ -1,0 +1,83 @@
+<!-- course.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Module</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('https://images.ctfassets.net/hrltx12pl8hq/6f2M9koJF7uhwGGao7WCX5/8683a9c8388dada729c7caeefc87872b/compressed_shutterstock_1274296330.jpg?fit=fill&w=1200&h=630');
+            background-size: cover; /* Adjust as needed */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Ensures the background image remains fixed */
+        }
+
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Course Module</h1>
+    </header>
+
+    <section id="add-course">
+        <h2>Add Course</h2>
+        <form id="add-course-form">
+            <label for="course-name">Course Name:</label>
+            <input type="text" id="course-name" name="courseName" required>
+
+            <label for="instructor">Instructor:</label>
+            <input type="text" id="instructor" name="instructor" required>
+
+            <button type="submit">Add Course</button>
+        </form>
+    </section>
+
+    <section id="edit-course">
+        <h2>Edit Course</h2>
+        <form id="edit-course-form">
+            <label for="course-id">Course ID:</label>
+            <input type="text" id="course-id" name="courseId" required>
+
+            <label for="edited-course-name">Edited Course Name:</label>
+            <input type="text" id="edited-course-name" name="editedCourseName" required>
+
+            <label for="edited-instructor">Edited Instructor:</label>
+            <input type="text" id="edited-instructor" name="editedInstructor" required>
+
+            <button type="submit">Edit Course</button>
+        </form>
+    </section>
+
+    <section id="delete-course">
+        <h2>Delete Course</h2>
+        <form id="delete-course-form">
+            <label for="delete-course-id">Course ID:</label>
+            <input type="text" id="delete-course-id" name="deleteCourseId" required>
+
+            <button type="submit">Delete Course</button>
+        </form>
+    </section>
+
+    <section id="assign-instructor">
+        <h2>Assign Instructor</h2>
+        <form id="assign-instructor-form">
+            <label for="assign-course-id">Course ID:</label>
+            <input type="text" id="assign-course-id" name="assignCourseId" required>
+
+            <label for="assign-instructor">Instructor:</label>
+            <input type="text" id="assign-instructor" name="assignInstructor" required>
+
+            <button type="submit">Assign Instructor</button>
+        </form>
+    </section>
+
+    
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="course.js"></script>
+</body>
+</html>

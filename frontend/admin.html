@@ -1,0 +1,77 @@
+<!-- admin.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Module</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('https://www.shutterstock.com/image-photo/admin-word-built-letter-cubes-600nw-1634303020.jpg');
+            background-size: cover; /* Adjust as needed */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Ensures the background image remains fixed */
+        }
+
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Module</h1>
+    </header>
+
+    <section id="user-management">
+        <h2>User Management</h2>
+        <form id="user-management-form">
+            <label for="userType">User Type:</label>
+            <select id="userType" name="userType" required>
+                <option value="student">Student</option>
+                <option value="instructor">Instructor</option>
+            </select>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Add User</button>
+        </form>
+    </section>
+
+    <section id="grade-management">
+        <h2>Grade Management</h2>
+        <form id="grade-management-form">
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" required>
+
+            <label for="courseId">Course ID:</label>
+            <input type="text" id="courseId" name="courseId" required>
+
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" required>
+
+            <button type="submit">Assign Grade</button>
+        </form>
+    </section>
+
+    <section id="course-allocation">
+        <h2>Course Allocation</h2>
+        <form id="course-allocation-form">
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" required>
+
+            <label for="courseId">Course ID:</label>
+            <input type="text" id="courseId" name="courseId" required>
+
+            <button type="submit">Allocate Course</button>
+        </form>
+    </section>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
